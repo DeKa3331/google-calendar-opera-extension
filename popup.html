@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Kalendarz</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="tabs">
+      <button id="btn-day" class="tab">Dziś</button>
+      <button id="btn-week" class="tab">Tydzień</button>
+    </div>
+    <div class="nav">
+      <button id="prev" title="Wstecz">‹</button>
+      <span id="range"></span>
+      <button id="next" title="Dalej">›</button>
+      <button id="today" title="Wróć do dziś">●</button>
+    </div>
+    <div class="actions">
+      <button id="open-full" title="Otwórz pełny kalendarz w karcie">↗</button>
+      <button id="settings" title="Ustawienia">⚙</button>
+    </div>
+  </header>
+
+  <main>
+    <iframe id="cal" title="Kalendarz Google"></iframe>
+    <div id="setup" hidden>
+      <p>Najpierw podaj adres swojego kalendarza (zwykle Twój Gmail).</p>
+      <button id="go-settings">Otwórz ustawienia</button>
+    </div>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

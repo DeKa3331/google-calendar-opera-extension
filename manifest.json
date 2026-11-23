@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Podgląd Kalendarza Google",
+  "version": "0.2.0",
+  "description": "Szybki podgląd Kalendarza Google: dzisiejszy dzień albo cały tydzień.",
+  "action": {
+    "default_title": "Kalendarz",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://calendar.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

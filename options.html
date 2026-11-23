@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Ustawienia – Podgląd Kalendarza Google</title>
+  <style>
+    body { font: 14px system-ui, sans-serif; max-width: 560px; margin: 32px auto; color: #202124; }
+    label { display: block; font-weight: 600; margin-top: 18px; }
+    input { width: 100%; padding: 8px; margin-top: 6px; border: 1px solid #dadce0; border-radius: 6px; font: inherit; }
+    small { color: #5f6368; display: block; margin-top: 4px; }
+    button { margin-top: 20px; padding: 8px 18px; background: #1a73e8; color: #fff; border: 0; border-radius: 6px; cursor: pointer; font: inherit; }
+    #status { margin-left: 10px; color: #188038; }
+  </style>
+</head>
+<body>
+  <h1>Ustawienia</h1>
+
+  <label for="calendars">Kalendarze do pokazania</label>
+  <input id="calendars" placeholder="jan.kowalski@gmail.com, inny-kalendarz@group.calendar.google.com">
+  <small>Adres Gmail to Twój główny kalendarz. Kolejne kalendarze oddziel przecinkami
+    (ID znajdziesz w Kalendarzu Google → Ustawienia kalendarza → „Identyfikator kalendarza”).</small>
+
+  <label for="tz">Strefa czasowa</label>
+  <input id="tz" placeholder="Europe/Warsaw">
+
+  <button id="save">Zapisz</button><span id="status"></span>
+
+  <script src="options.js"></script>
+</body>
+</html>
